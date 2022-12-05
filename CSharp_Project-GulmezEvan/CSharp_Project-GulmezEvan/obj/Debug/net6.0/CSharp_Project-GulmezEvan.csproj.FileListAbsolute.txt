@@ -1,0 +1,15 @@
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\bin\Debug\net6.0\CSharp_Project-GulmezEvan.exe
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\bin\Debug\net6.0\CSharp_Project-GulmezEvan.deps.json
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\bin\Debug\net6.0\CSharp_Project-GulmezEvan.runtimeconfig.json
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\bin\Debug\net6.0\CSharp_Project-GulmezEvan.dll
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\bin\Debug\net6.0\CSharp_Project-GulmezEvan.pdb
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.csproj.AssemblyReference.cache
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.AssemblyInfoInputs.cache
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.AssemblyInfo.cs
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.csproj.CoreCompileInputs.cache
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.dll
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\refint\CSharp_Project-GulmezEvan.dll
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.pdb
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\CSharp_Project-GulmezEvan.genruntimeconfig.cache
+C:\Users\lukag\OneDrive\Bureau\Cours_C#\CSharp_Project-GulmezEvan\CSharp_Project-GulmezEvan\obj\Debug\net6.0\ref\CSharp_Project-GulmezEvan.dll
