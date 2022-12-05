@@ -1,23 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System.Collections;
 
-// les attributs et les modificateurs de classe (niveau d'accès) sont placés a 
-// avant le mot cle classe
-class MaClasse
-{
-    // les membres : méthodes, propriétés
+struct GeoPoint { 
+    
+    double Lat;
 
-    public int MyProperty { get; set; }
+    double Long;
 }
-// Public
-// Autorise l'accès a tous les types et a tout le projet
 
-// Private
-// Autorise l'accès uniquement pour les autres membres du type
+// C'est un type reference
 
-// Internal
-// Uniquement au sein de l'espace de nom du type 
+// Elles ne supportent pas l'heritage
 
-// Protected
-// Accès pour les autres membres du type et pour tous les types héritant
-// de celui-ci même en dehors de l'espace de nom l'"assembly"
+// Elles peuvent posseder tous les membres d'une classe a l'exception d'un 
+// constructeur sans parametres d'un destructeur et de membres virtuels
