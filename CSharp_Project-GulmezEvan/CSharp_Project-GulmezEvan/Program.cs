@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+
+string name = "Anthony";
+
+    name.toupper()
+
+    console.writeline(name);
+console.writeline($"Bienvenue {name}, comment vas-tu ?");
