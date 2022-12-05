@@ -1,8 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-string name = "Anthony";
+int i = 4;
 
-    name.toupper()
+long l = i;
 
-    console.writeline(name);
-console.writeline($"Bienvenue {name}, comment vas-tu ?");
+//Conversion explicite
+
+int m = (int) l;
+
+short n = 300;
+
+byte o =(byte)n;
