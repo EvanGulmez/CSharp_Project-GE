@@ -41,7 +41,8 @@ namespace RockPaperScissors
                 }
 
                 // Choices
-                Console.WriteLine("Player chose: " + PlayerChoice);
+                //Console.WriteLine();
+                Console.WriteLine(Environment.NewLine + "Player chose: " + PlayerChoice);
                 Console.WriteLine("Computer chose: " + ComputerChoice);
 
                 // Determine the winner of the round
@@ -81,7 +82,24 @@ namespace RockPaperScissors
                 }
 
                 Console.WriteLine();
-            
+
+                // Display the overall winner
+                Console.WriteLine("Player wins: " + PlayerWins);
+                Console.WriteLine("Computer wins: " + ComputerWins);
+            }
+
+            // Determinate who win between the player or the computer
+            if (PlayerWins > ComputerWins)
+            {
+                Console.WriteLine(Environment.NewLine +"C################ PLAYER WINS THE GAME ! C###################");
+            }
+            else if (PlayerWins < ComputerWins)
+            {
+                Console.WriteLine(Environment.NewLine + "C################ COMPUTER WINS THE GAME ! C###################");
+            }
+            else
+            {
+                Console.WriteLine(Environment.NewLine + "C################ THE GAME ENDED BY AN EQUALITY ! C###################");
             }
         }
     }
