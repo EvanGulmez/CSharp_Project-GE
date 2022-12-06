@@ -1,19 +1,15 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System.Collections;
+﻿using System;
+// A Simple game project named " Rock Paper Scissors "in C# //
+// V1.1
+// Gülmez Evan M1 ESI
 
-namespace WinFormsApp1
+namespace RockPaperScissors
 {
-
-    public class Class1
+    class Program
     {
-        public int MyProperty { get; set; }
-        public string AString { get; set; }
-        
-        public Class1() 
+        static void Main(string[] args)
         {
-            this.MyProperty = 1;
+          
         }
     }
-
-
 }
