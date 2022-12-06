@@ -19,10 +19,51 @@ namespace RockPaperScissors
             // Play only 3 rounds
             for (int i = 0; i < 3; i++) 
             {
-                // Let the player to enter their choice
-                Console.WriteLine("Enter your choice (Rock, Paper, or Scissors):");
-                // Pass the string in Lowercase 
-                string PlayerChoice = Console.ReadLine().ToLower();
+                string PlayerChoice=" ";
+
+                bool passed = false;
+                bool verify = false;
+                while (passed == false)
+                {
+                    // Let the player to enter their choice
+                    Console.WriteLine("Enter your choice (Rock, Paper, or Scissors):");
+                    
+                    try
+                    {
+                        // Pass the string in Lowercase 
+                        PlayerChoice = Console.ReadLine().ToLower();
+                    }
+                    catch (IndexOutOfRangeException)
+                    {
+                        Console.WriteLine("Missing Fields");
+                    }
+                    finally
+                    {
+                        
+                        string[] data = new string[3];
+                        data[0] = "rock";
+                        data[1] = "paper";
+                        data[2] = "scissors";
+                        for (int n = 0; n <3 ; n++) 
+                        {
+                            if (data[n] == PlayerChoice)
+                            {
+                                verify = true;
+                            }
+
+                        }
+
+                        if (!verify)
+                        {
+                            Console.WriteLine("Missing Fields");
+                            passed = false;
+                        }
+                        else
+                        {
+                            passed = true;
+                        }
+                    }
+                }
                 // Add the random choice
                 int ComputerChoiceNum = random.Next(1, 4);
                 string ComputerChoice = "";
@@ -35,13 +76,13 @@ namespace RockPaperScissors
                 {
                     ComputerChoice = "paper";
                 }
-                else
+                else if (ComputerChoiceNum == 3)
                 {
                     ComputerChoice = "scissors";
                 }
 
-                // Choices
-                //Console.WriteLine();
+
+                // Display Choices
                 Console.WriteLine(Environment.NewLine + "Player chose: " + PlayerChoice);
                 Console.WriteLine("Computer chose: " + ComputerChoice);
 
@@ -76,9 +117,13 @@ namespace RockPaperScissors
                     Console.WriteLine("Player Wins!");
                     PlayerWins++;
                 }
-                else
+                else if (PlayerChoice == "scissors" && ComputerChoice == "scissors" || PlayerChoice == "paper" && ComputerChoice == "paper" || PlayerChoice == "rock" && ComputerChoice == "rock")
                 {
                     Console.WriteLine("We have an Equality !");
+                }
+                else
+                {
+                    Console.WriteLine("Missing fields");
                 }
 
                 Console.WriteLine();
