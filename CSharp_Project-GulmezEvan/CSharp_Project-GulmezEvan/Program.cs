@@ -40,6 +40,48 @@ namespace RockPaperScissors
                     ComputerChoice = "scissors";
                 }
 
+                // Choices
+                Console.WriteLine("Player chose: " + PlayerChoice);
+                Console.WriteLine("Computer chose: " + ComputerChoice);
+
+                // Determine the winner of the round
+                if (PlayerChoice == "rock" && ComputerChoice == "scissors")
+                {
+                    Console.WriteLine("Player Wins!");
+                    PlayerWins++;
+                }
+                else if (PlayerChoice == "rock" && ComputerChoice == "paper")
+                {
+                    Console.WriteLine("Computer Wins!");
+                    ComputerWins++;
+                }
+                else if (PlayerChoice == "paper" && ComputerChoice == "rock")
+                {
+                    Console.WriteLine("Player Wins!");
+                    PlayerWins++;
+                }
+                else if (PlayerChoice == "paper" && ComputerChoice == "scissors")
+                {
+                    Console.WriteLine("Computer Wins!");
+                    ComputerWins++;
+                }
+                else if (PlayerChoice == "scissors" && ComputerChoice == "rock")
+                {
+                    Console.WriteLine("Computer Wins!");
+                    ComputerWins++;
+                }
+                else if (PlayerChoice == "scissors" && ComputerChoice == "paper")
+                {
+                    Console.WriteLine("Player Wins!");
+                    PlayerWins++;
+                }
+                else
+                {
+                    Console.WriteLine("We have an Equality !");
+                }
+
+                Console.WriteLine();
+            
             }
         }
     }
