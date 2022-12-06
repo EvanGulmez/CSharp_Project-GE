@@ -39,7 +39,6 @@ namespace RockPaperScissors
                     }
                     finally
                     {
-                        
                         string[] data = new string[3];
                         data[0] = "rock";
                         data[1] = "paper";
@@ -50,7 +49,6 @@ namespace RockPaperScissors
                             {
                                 verify = true;
                             }
-
                         }
 
                         if (!verify)
