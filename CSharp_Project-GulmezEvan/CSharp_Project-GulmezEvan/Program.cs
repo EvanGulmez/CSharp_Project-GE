@@ -20,14 +20,14 @@ namespace RockPaperScissors
             for (int i = 0; i < 3; i++) 
             {
                 string PlayerChoice=" ";
-
+                // Variables of Try catch Verification
                 bool passed = false;
                 bool verify = false;
+                
                 while (passed == false)
                 {
                     // Let the player to enter their choice
                     Console.WriteLine("Enter your choice (Rock, Paper, or Scissors):");
-                    
                     try
                     {
                         // Pass the string in Lowercase 
