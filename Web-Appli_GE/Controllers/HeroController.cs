@@ -32,10 +32,28 @@ namespace Web_Appli_GE.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<List<Hero>>> CreateHero(int name, [FromBody]Hero hero) 
+        public async Task<ActionResult<List<Hero>>> CreateHero(string name, string firstname, string lastname, Hero hero)
         {
-            heroes.Add(hero);
-            return Ok(heroes);
+            // Use a try-catch block to handle the case where the hero is not found
+            try
+            {
+                // Set the values of the hero object
+                hero.Id = heroes.Count + 1; // Set the ID to a unique value
+                // Set the values of the hero object
+                hero.Name = name;
+                hero.FirstName = firstname;
+                hero.LastName = lastname;
+
+                // Add the hero to the list
+                heroes.Add(hero);
+                // Return the updated list of heroes
+                return Ok(heroes);
+            }
+            catch (InvalidOperationException)
+            {
+                // Return a NotFound result if the hero is not found
+                return NotFound();
+            }
         }
 
         [HttpPut("{id}")]
@@ -44,7 +62,7 @@ namespace Web_Appli_GE.Controllers
                 // Use a try-catch block to handle the case where the hero is not found
                 try
                 {
-                    // Find the hero by its id
+                // Find the hero by its id
                     var heroToUpdate = heroes.First(h => h.Id == id);
 
                 // Update the hero's properties
