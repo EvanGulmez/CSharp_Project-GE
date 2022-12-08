@@ -7,5 +7,6 @@
         }
 
         public DbSet<Hero> Heroes { get; set; }
-    }
+        public DbSet<Movies> MyMovie { get; set; }
+}
 
