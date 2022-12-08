@@ -57,27 +57,27 @@ namespace Web_Appli_GE.Controllers
         }
 
         [HttpPut("{id}")]
-            public async Task<ActionResult<List<Hero>>> UpdateHero(int id, string name, String firstname, string lastname)
+        public async Task<ActionResult<List<Hero>>> UpdateHero(int id, string name, String firstname, string lastname)
+        {
+            // Use a try-catch block to handle the case where the hero is not found
+            try
             {
-                // Use a try-catch block to handle the case where the hero is not found
-                try
-                {
-                // Find the hero by its id
-                    var heroToUpdate = heroes.First(h => h.Id == id);
+            // Find the hero by its id
+                var heroToUpdate = heroes.First(h => h.Id == id);
 
-                // Update the hero's properties
-                    heroToUpdate.Name = name;
-                    heroToUpdate.FirstName = firstname ;
-                    heroToUpdate.LastName = lastname ;
+            // Update the hero's properties
+                heroToUpdate.Name = name;
+                heroToUpdate.FirstName = firstname ;
+                heroToUpdate.LastName = lastname ;
 
-                    return Ok(heroes);
-                }
-                catch (InvalidOperationException)
-                {
-                    // Return a NotFound result if the hero is not found
-                    return NotFound();
-                }
+                return Ok(heroes);
             }
+            catch (InvalidOperationException)
+            {
+                // Return a NotFound result if the hero is not found
+                return NotFound();
+            }
+        }
 
         [HttpDelete("{id}")]
         public async Task<ActionResult<List<Hero>>> DeleteHero(int id)
