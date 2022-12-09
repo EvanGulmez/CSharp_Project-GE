@@ -8,6 +8,7 @@ namespace Web_Appli_GE.Controllers
     [Route("[controller]")]
     public class HeroController : ControllerBase
     {
+
         private static List<Hero> heroes = new List<Hero>
         {
             new Hero {Id=1, Name = "IronMan", FirstName="Tony", LastName ="Stark"},
@@ -25,18 +26,27 @@ namespace Web_Appli_GE.Controllers
         }
         
         [HttpGet]
-        public async Task<ActionResult<List<Hero>>> Get()
+        public async Task<ActionResult<List<Hero>>> GetAllHeroes()
         {
+            if (_context.Heroes== null)
+            {
+                return NotFound();
+            }
+
             var myHeroes = await _context.Heroes.ToListAsync();
-            return Ok(heroes);
+            return await _context.Heroes.ToListAsync();
         }
 
         [HttpPost]
         public async Task<ActionResult<List<Hero>>> CreateHero(string name, string firstname, string lastname, Hero hero)
         {
+
+            Hero heroes = new Hero { Name = name, FirstName = firstname, LastName = name };
+            await _context.Heroes.AddAsync(hero);
+                        
             // Use a try-catch block to handle the case where the hero is not found
             try
-            {
+            {/*
                 // Set the values of the hero object
                 hero.Id = heroes.Count + 1; // Set the ID to a unique value
                 // Set the values of the hero object
@@ -47,7 +57,8 @@ namespace Web_Appli_GE.Controllers
                 // Add the hero to the list
                 heroes.Add(hero);
                 // Return the updated list of heroes
-                return Ok(heroes);
+                return Ok(heroes);*/
+                await _context.SaveChangesAsync();
             }
             catch (InvalidOperationException)
             {
